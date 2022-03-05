@@ -1,7 +1,9 @@
 const express = require("express")
 const app = express()
 const fs =require("fs")
-app.listen((process.env.PORT || 3000, ()=> console.log("Hello bro") )
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, ()=> console.log('The value of PORT is:',PORT))
 
 
 app.get('/',function (req,res) {
