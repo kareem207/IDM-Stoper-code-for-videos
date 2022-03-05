@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const fs =require("fs")
-app.listen(3000, ()=> console.log("Hello bro") )
+app.listen((process.env.PORT || 3000, ()=> console.log("Hello bro") )
 
 
 app.get('/',function (req,res) {
